@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicker{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.autoclicker{
+    width: 200px;
+    height: 100px;
+}
