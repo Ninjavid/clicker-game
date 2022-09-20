@@ -1,16 +1,68 @@
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 50px auto;
 }
 
 .clicker{
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    background-color: white;
+    border: 5px solid yellow;
+    color: red;
+    font-size: 25px;
+    font-weight:bold;
 }
+
+    .clicker:hover, .autoclicker:hover{
+        background-color: yellow;
+        color: red;
+        border: 5px solid red;
+    }
 
 .autoclicker{
     width: 200px;
     height: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 5px solid yellow;
+    color: red;
+    font-size: 25px;
+    font-weight:bold;
 }
+
+
+
+.points{
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+    .button-container button{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 10px lightgray;
+        cursor: pointer;
+        margin-top: 150px;
+    }
+
+        .button-container button:hover{
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            border: 3px solid red;
+        }
