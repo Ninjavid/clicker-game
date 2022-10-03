@@ -1,8 +1,9 @@
 const clicker = document.getElementById("clicker");
 let pointsCounter = document.getElementById("points");
+let points = 0;
 let autoclicker = document.getElementById("autoclicker");
 let reset = document.getElementById("resetButton");
-let points = 0
+
 let clickerUpgrade = false;
 
 clicker.addEventListener("click", () => {
