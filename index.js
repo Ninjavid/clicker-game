@@ -14,22 +14,39 @@ function buyAutoclicker() {
         if (points >= 10 && !clickerUpgrade) {
             points -= 10
            alert("upgrade bought")
-           setTimeout(() => {
-               points++
-               clickerUpgrade = true;
-           }, 1000)
+           clickerUpgrade = true;
+           autoTimer();
         }
     else if(points >= 10 && clickerUpgrade) {
         alert("already bought")
     } else {
         alert("please get 10 points")
     }
+    pointsCounter.innerHTML = points
+}
+
+function autoClick() {
+    points++
+    // setTimeout(autoClick, 1000);
+}
+
+function autoTimer() {
+    return(
+    points = setInterval(function() {
+        autoClick()
+
+        pointsCounter.innerHTML = points
+    }, 1000)
+    )
 }
 
 function resetButton() {
     if(points > 0){
         points -= points;
         pointsCounter.innerHTML = 0;
+    }
+    if (points === 0) {
+        clearInterval(autoTimer)
     }
 }
 
